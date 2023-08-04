@@ -1,103 +1,244 @@
-<html>
-	<head>
-		<link href="style.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <title>KELVIN KANI SIKAMOI</title>
-	</head>
+<!---Log-in-->
+<!DOCTYPE html>
+<html lang="en">
 
-	<body>
-		<header id="header">
-			<!-- resume header with your name and title -->
-			<h1>KELVIN KANI SIKAMOI </h1>
-			<hr>S
-			Faculty Demo
-			<hr>
-		</header>
-		<main>
-			<article id="mainLeft">
-				<section>
-					<h2>CONTACT</h2>
-					<!-- contact info including social media -->
-                    <p>
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <a href="mailto:username@domain.top-level domain">sikamoikelvin777@gmail.com</a>
-                    </p>
-                    <p>
-                        <i class="fab fa-github" aria-hidden="true"></i>
-                        <a href="">KELVIN KANI</a>
-                    </p>
-                    <p>
-                        <i class="fab fa-linkedin" aria-hidden="true"></i>
-                        <a href="linkedin.com/in/kelvin-sikamoi">KELVIN SIKAMOI</a>
-                    </p>
-				</section>
-				<section>
-					<h2>SKILLS</h2>
-					<!-- your skills -->
-                    <ul>
-                        <li>Cloud Computing </li>
-                        <li>Cloud Security</li>
-                        <li>Networking </li>
-                        <li>Communication</li>
-                    </ul>
-				</section>
-				<section>
-					<h2>EDUCATION</h2>
-					<!-- your education -->
-                    <h3>Bsc Computer Technology</h3>
-                    <p>
-                       Jomo Kenyatta University of Agriculture and  Technology
-                    </p>
-                    <p>
-                        2021 - 2025
-                    </p>
-				</section>            
-			</article>
-			<article id="mainRight">
-				<section>
-					<h2>ABOUT</h2>
-					<!-- about you -->
-                    <p>My great love for technology has been a driving force in my life and has led me to pursue a career in the IT industry. Ever since I was a child, I have been fascinated by the possibilities that technology presents, and I have always been eager to explore new advancements in the field. As a student, I remember staying up all night working on science congress projects, which we would then present at regional and national competitions.
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-                        As I have grown older, my passion for technology has only intensified, particularly when it comes to networks, cybersecurity, and the cloud. I am drawn to the ever-expanding digital world and am constantly inspired by the innovative solutions that technology can provide. I enjoy the process of learning new skills and applying them to troubleshoot current and future challenges in the industry.
-                        
-                        I firmly believe that in order to succeed in the tech space, it is important to stay current with the latest advancements and to continuously improve one's skills. I strive to be part of the steamroller of progress, rather than simply a bystander on the sidelines. With my expertise in networking, cybersecurity, and the cloud, I am eager to contribute to the growth and development of the technology industry, and I look forward to the opportunities and challenges that lie ahead.</p>
-				</section>
-				<section>
-					<h2>WORK EXPERIENCE</h2>
-					<!-- your work experience -->
-                    <h3>Network Field Engineer</h3>
-                    <p>
-                    Gaichu Managed Services | Feb 2023 –Up to date
-                    </p>
-                    <ul>
-                            <li>Task 1• <BR>.Responsive technical support service<BR> •Confirm that the SLA-set client service availability is met.
-                                .Diagnose customer service issues and make recommendations.
-                                .Put effective solutions in place.
-                                •Investigate and generate thorough Fault Reports describing client link failure problems. 
-                                <br>•Take preventive action keep ace up to stop/reduce
-                                .Stop errors from happening. Making sure the Company CDI is attained.
-                                .Installing and configuring computer hardware is a WAN/LAN Managed Services expert's specialty.
-                             <li>Write the outcomes/impact of your contribution</li>
-                            
-                    </ul>
+        body {
+            /* font-family: 'Josefin Sans', sans-serif; */
+            font-family: 'Poppins', sans-serif;
+            max-height: 100vh;
+            background-color: #1F252E;
+        }
 
-                    <h3> Chief Technology Officer</h3>
-                    <p>
-                       Independent Electoral and Boundaries Commission |June 2022– August 2022 
-                    </p>
-                    <ul>
-                            <li>Task 1 -  -<br> •Configure KIEMS kits and ensure proper functionality during elections.
-                                
-                                • Ensure compliance with relevant legal and regulatory requirements related to ICT.<br>
-                                • Train passonels on usage of KIEMS kits during elections.<br>
-                                •Manage elections backend data and transmission to national election tally centre.
-                                •Ensure proper network configuration for transmission of data and configure Thuraya satelite.</li></li>
-                            <li>Write the outcomes/impact of your contribution</li>
-                            
-                    </ul>
-				</section>
-			</article>
-		</main>
-	</body>
+        /*nav */
+        header {
+            padding: 1.7rem 1rem;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            max-width: 80%;
+            margin: auto;
+            align-items: center;
+            background-color: transparent;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 800;
+        }
+
+        .logo a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: .97rem;
+            font-weight: 600;
+            letter-spacing: .7px;
+            padding: 1rem;
+            padding: 0.4rem 1rem;
+        }
+
+        nav a.active,
+        nav a:hover {
+            color: #00E8F8;
+            border-radius: 1rem;
+            transition: all.3s ease-in-out;
+        }
+
+        #click {
+            display: none;
+        }
+
+        .menu i {
+            color: #00E8F8;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        /* Nav */
+
+        section {
+            margin: 2rem 8.5rem;
+            ;
+        }
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5rem auto;
+        }
+
+        .main h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #fff;
+            /* animation: check 1s ease forwards;
+            animation-delay: .1s; */
+        }
+
+        .main p {
+            margin-top: 1rem;
+            font-size: .98rem;
+            color: #fff;
+        }
+
+        .social {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.4rem;
+            margin-top: 1.7rem;
+        }
+
+        .social a {
+            color: #00E8F8;
+            font-size: 1rem;
+            border: 1.6px solid #00E8F8;
+            border-radius: 50%;
+            padding: .35rem;
+            text-align: center;
+            width: 26px;
+        }
+
+        .social a:hover {
+            color: #1F252E;
+            background-color: #00E8F8;
+            box-shadow: 0 0 20px #00E8F8;
+            transition: all .3s ease-in-out;
+        }
+
+        .main h1 span:nth-child(1) {
+            font-size: 1.5rem;
+        }
+
+        .main h1 span:nth-child(2) {
+            color: #00E8F8;
+        }
+
+        .images {
+            background-image: url(/img/graph5.png);
+            background-repeat: no-repeat;
+            background-position: 0 -75px;
+            -webkit-box-shadow: 0 10px 10px -10px #000000;
+            -moz-box-shadow: 0 10px 10px -10px #000000;
+            box-shadow: 0px 16px 4px -10px #00E8F8;
+            width: 528px;
+            background-size: cover;
+        }
+
+        /* @keyframes check {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        } */
+
+        @media only screen and (max-width:480px) {
+            .menu {
+                display: block;
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: #244D61;
+            }
+
+            header {
+                padding: 0.7rem 1rem;
+                align-items: center;
+                max-width: 100%;
+            }
+
+            nav {
+                position: absolute;
+                display: grid;
+                top: 75px;
+                text-align: center;
+                background-color: #1F252E;
+                left: -100%;
+                z-index: 1;
+                width: 100%;
+            }
+
+            #click:checked~nav {
+                left: 0%;
+                transition: all 0.3s ease;
+            }
+
+            section {
+                margin: 1rem 1.5rem;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">Logo.</a>
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="mainicon">
+            <div class="menu">
+                <i class="bi bi-list"></i>
+            </div>
+        </label>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+
+    <section>
+        <div class="main">
+            <div class="detail"><!---Sarah -->
+                <h1><span>Hi, It's Me</span> <br> I'm <span style="color:#00E8F8;">Aura</span></h1>
+                <p>Lorem Ipsum is simply dummy text of the printing <br> and typesetting industry. </p>
+                <div class="social">
+                    <a href="#"><i class="bi bi-github"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+            <div class="images">
+                <img src="/img/pass.png" alt="" width="100%">
+            </div>
+        </div>
+    </section>
+
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+</style>
+<!-- <style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+  </style> -->
+
 </html>
